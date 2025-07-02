@@ -69,4 +69,8 @@ class Student {
         System.out.println("Roll no is: " + this.rno + " , " +
                 "Your name is: " + this.name + " and You get: " + this.marks);
     }
+
+    public static void main(String[] args) {
+        System.out.println("Helloo class");
+    }
 }
