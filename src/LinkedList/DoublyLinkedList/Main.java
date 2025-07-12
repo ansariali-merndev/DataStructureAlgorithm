@@ -18,11 +18,15 @@ public class Main {
         System.out.println("Forward Display: " + list.forwardDisplay());
         System.out.println("Backward Display: " + list.backwardDisplay());
 
+        list.reverseLinkedList();
+        System.out.println("Forward Display: " + list.forwardDisplay());
+        System.out.println("Backward Display: " + list.backwardDisplay());
+
 //        list.deleteAtHead();
 //        list.deleteAtTail();
 
-        list.deleteAtIndex(2);
-        System.out.println("After deleting forward: " + list.forwardDisplay());
-        System.out.println("After deleting Backward: " + list.backwardDisplay());
+//        list.deleteAtIndex(2);
+//        System.out.println("After deleting forward: " + list.forwardDisplay());
+//        System.out.println("After deleting Backward: " + list.backwardDisplay());
     }
 }

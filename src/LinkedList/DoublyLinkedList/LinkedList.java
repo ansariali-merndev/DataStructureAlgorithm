@@ -109,6 +109,22 @@ public class LinkedList {
         delete.next = null;
     }
 
+    public void reverseLinkedList() {
+        Node curr = head;
+        Node temp = null;
+        while(curr != null) {
+            temp = curr.prev;
+            curr.prev = curr.next;
+            curr.next = temp;
+            curr = curr.prev;
+        }
+
+        if(temp != null) {
+            tail = head;
+            head = temp.prev;
+        }
+    }
+
     public String forwardDisplay() {
         Node curr = head;
         StringBuilder sb = new StringBuilder();
